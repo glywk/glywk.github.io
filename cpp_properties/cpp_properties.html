@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -480,7 +481,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" data-lang="properties">! Config file for mosquitto
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">! Config file for mosquitto
 
 retry_interval=20
 #sys_interval=10
@@ -504,7 +505,7 @@ auth_opt_db_password=dummy</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" data-lang="properties"># Config file for mosquitto
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># Config file for mosquitto
 
 retry_interval       20
 #sys_interval        10
@@ -528,7 +529,7 @@ auth_opt_db_password dummy</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" data-lang="properties"># Config file for mosquitto
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties"># Config file for mosquitto
 
 retry_interval:       20
 #sys_interval:        10
@@ -555,7 +556,7 @@ auth_opt_db_password: dummy</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>#include &lt;cpp_properties/action/properties_action.hpp&gt;
+<pre class="highlightjs highlight"><code class="language-none hljs">#include &lt;cpp_properties/action/properties_action.hpp&gt;
 #include &lt;cpp_properties/actor/properties_actor.hpp&gt;
 #include &lt;cpp_properties/actor/traits/properties_actor_traits.hpp&gt;
 #include &lt;cpp_properties/parser.hpp&gt;</code></pre>
@@ -817,8 +818,16 @@ Visual Studio 2015, 2017, 2019</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-21 22:37:37 +0100
+Last updated 2022-01-23 00:29:04 +0100
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/properties.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
 </body>
 </html>
